@@ -19,17 +19,23 @@ function countMileage(start, finish) {
     total -= 11;
     speed = 6;
     mileage = 11*60*speed;
+
+    console.log(mileage);
     
     while (total >= 0) {
       speed += 1;
+      if (total+10 <= 0) {
+        mileage += total*60*speed;
+        break;
+      }
       mileage += 10*60*speed;
-      console.log(mileage);
       total -= 10;
+      
+      console.log(mileage);
     }
   }
 
-  console.log(mileage);
   return mileage;
 }
 
-countMileage('10:25:21', '12:00:00')
+countMileage('11:35:00', '12:00:00')
