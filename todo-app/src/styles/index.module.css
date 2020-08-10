@@ -1,0 +1,32 @@
+.indexContainer {
+  margin-top: 175px;
+}
+
+.welcome {
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+
+.buttonContainer {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px 20px;
+  border-style: solid;
+  cursor: pointer;
+  background-color: tomato;
+  width: 30%;
+  transition: 0.2s ease;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: gold;
+  color: black;
+}
