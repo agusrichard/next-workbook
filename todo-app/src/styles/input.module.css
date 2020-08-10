@@ -1,0 +1,41 @@
+.inputContainer {
+  padding: 10px 20px;
+}
+
+.input {
+  width: 75%;
+  padding: 10px 20px;
+  font-size: 22px;
+  border-radius: 10px;
+  border-color: gold;
+  background-color: gray;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.input:focus {
+  background-color: honeydew;
+  color: black;
+}
+
+.button {
+  padding: 0;
+  width: 30%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border-style: solid;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.button:hover {
+  background-color: tomato;
+  color: white;
+}
