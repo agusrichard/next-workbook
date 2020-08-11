@@ -15,7 +15,7 @@ handler.post(async (req, res) => {
     const response = await user.save()
     res.json({
       success: true,
-      message: 'It works dude...',
+      message: 'It works ma dude...',
       data: response
     })
   } catch(err) {
