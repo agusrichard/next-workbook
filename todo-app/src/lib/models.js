@@ -12,6 +12,8 @@ var todoSchema = new mongoose.Schema({
   description: String
 })
 
+console.log('we create the models again! why?')
+
 var User = mongoose.model('User', userSchema)
 var Todo = mongoose.model('Todo', todoSchema)
 

@@ -4,7 +4,6 @@ import { User, Todo } from '../lib/models'
 
 function connect(req, res, next) {
   console.log('connect')
-  // if (mongoose.connections[0].readyState) return next();
   mongoose.connect(process.env.DATABASE, { useNewUrlParser: true, useUnifiedTopology: true })
   const db = mongoose.connection
   db.on('error', console.error.bind(console, 'connection error:'));
