@@ -1,7 +1,7 @@
 import nextConnect from 'next-connect'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import middleware from '../../middlewares/db'
+import middleware from '../../middlewares/dbMiddleware'
 
 const handler = nextConnect()
 handler.use(middleware)

@@ -1,20 +1,20 @@
 import mongoose from 'mongoose'
 
-var userSchema = new mongoose.Schema({
+const userSchema = new mongoose.Schema({
   username: String,
   password: String
 })
 
-var todoSchema = new mongoose.Schema({
+const todoSchema = new mongoose.Schema({
   title: String,
+  description: String,
   createdAt: { type: Date, default: Date.now },
-  forWhen: Date,
-  description: String
+  userId: String
 })
 
 console.log('we create the models again! why?')
 
-var User = mongoose.model('User', userSchema)
-var Todo = mongoose.model('Todo', todoSchema)
+const User = mongoose.models.User || mongoose.model('User', userSchema)
+const Todo = mongoose.models.Todo || mongoose.model('Todo', todoSchema)
 
 export { User, Todo }
