@@ -34,3 +34,20 @@
 .formContainer {
   margin-top: 75px;
 }
+
+.todosContainer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.addTodo {
+  background-color: burlywood;
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-weight: bolder;
+  font-size: 22px;
+}

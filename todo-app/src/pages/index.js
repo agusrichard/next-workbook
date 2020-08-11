@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import styles from '../styles/index.module.css'
 import Layout from '../components/layout'
+import styles from '../styles/pages.module.css'
 
 export default function Index() {
   return (

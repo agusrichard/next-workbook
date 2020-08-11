@@ -1,20 +1,20 @@
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 import axios from 'axios'
 import Layout from '../components/layout'
 import Input from '../components/input'
 import Button from '../components/button'
-import styles from '../styles/index.module.css'
+import styles from '../styles/pages.module.css'
 
 export default function CreateTodo() {
+  const router = useRouter()
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    console.log('Create Todo here', title, description)
     try {
       const token = localStorage.getItem('token')
-      console.log(token)
       if (token) {
         const options = {
           headers: {
@@ -23,11 +23,11 @@ export default function CreateTodo() {
         }
         const data = { title, description }
         const response = await axios.post('/api/create-todo', data, options)
-        console.log(response)
         if (response.status === 200) {
           console.log('Gut Job!')
+          router.push('/todos')
         } else {
-          console.log('So sad!')
+          alert('Not a good status code bruh!')
         }
       } else {
         alert("You are not allowed to do that kid...")

@@ -4,7 +4,7 @@ import axios from 'axios'
 import Layout from '../components/layout'
 import Input from '../components/input'
 import Button from '../components/button'
-import styles from '../styles/index.module.css'
+import styles from '../styles/pages.module.css'
 
 export default function Login() {
   const router = useRouter()

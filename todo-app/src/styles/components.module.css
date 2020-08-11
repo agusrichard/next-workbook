@@ -1,0 +1,95 @@
+.inputContainer {
+  padding: 10px 20px;
+}
+
+.input {
+  width: 75%;
+  padding: 10px 20px;
+  font-size: 22px;
+  border-radius: 10px;
+  border-color: gold;
+  background-color: gray;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.input:focus {
+  background-color: honeydew;
+  color: black;
+}
+
+.button {
+  padding: 0;
+  width: 30%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border-style: solid;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.button:hover {
+  background-color: tomato;
+  color: white;
+}
+
+.container {
+  background-color: plum;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  background-color: rebeccapurple;
+  width: 400px;
+  height: 600px;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  overflow: auto;
+}
+
+.item {
+  background-color: black;
+  box-shadow: 4px 4px 8px 2px rgba(210, 210, 210, 0.75);
+  cursor: pointer;
+  color: white;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+  transition: 0.2s ease-out;
+}
+
+.item:hover {
+  box-shadow: 4px 4px 8px 8px rgba(255, 255, 255, 0.75);
+}
+
+.itemTitle {
+  font-size: 20px;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+
+.itemDate {
+  color: #999;
+  font-size: 14px;
+}
+
+.itemDesc {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  color: #ccc;
+  text-align: left;
+}

@@ -5,18 +5,18 @@ import middleware from '../../middlewares/dbMiddleware'
 const handler = nextConnect()
 handler.use(middleware)
 
-handler.post(async (req, res) => {
+handler.get(async (req, res) => {
   try {
     const token = req.headers.authorization ? req.headers.authorization.slice(7) : undefined
     if (token) {
       const { userId } = jwt.verify(token, process.env.SECRET_SAUCE)
-      const { title, description } = req.body
       const { Todo } = req
-      const newTodo = new Todo({ title, description, userId })
+      const todos = await Todo.find({ userId: { $eq: userId } })
+      console.log(todos)
       res.json({
         success: true,
-        message: 'Congratulation for you dude!',
-        data: await newTodo.save()
+        message: 'Will it work? I guess it is...',
+        data: todos
       })
     } else {
       res.json({

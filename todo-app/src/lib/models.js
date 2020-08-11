@@ -12,8 +12,6 @@ const todoSchema = new mongoose.Schema({
   userId: String
 })
 
-console.log('we create the models again! why?')
-
 const User = mongoose.models.User || mongoose.model('User', userSchema)
 const Todo = mongoose.models.Todo || mongoose.model('Todo', todoSchema)
 
