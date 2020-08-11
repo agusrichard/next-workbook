@@ -4,8 +4,8 @@ export default function Input(props) {
   return (
     <div className={styles.inputContainer}>
       <input
+        { ...props }
         className={styles.input}
-        placeholder="Input Here"
       />
     </div>
   )
