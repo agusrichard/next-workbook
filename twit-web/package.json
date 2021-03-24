@@ -1,0 +1,27 @@
+{
+  "name": "twit-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "@testing-library/dom": "^7.30.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "babel-jest": "^26.6.3",
+    "jest-dom": "^4.0.0",
+    "next": "10.0.9",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "@types/react": "^17.0.3",
+    "jest": "^26.6.3",
+    "typescript": "^4.2.3"
+  }
+}
