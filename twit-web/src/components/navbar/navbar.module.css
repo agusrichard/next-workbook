@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: var(--navbar-height);
+  background-color: aquamarine;
+  align-items: center;
+}
+
+.inner {
+  width: 75%;
+  display: flex;
+  font-size: 1.25rem;
+  justify-content: space-between;
+}
+
+.link {
+  margin: 5px 10px;
+  padding: 10px 20px;
+  transition: 0.25s;
+}
+
+.link:hover, .activeLink {
+  color: white;
+  border-radius: 5px;
+  background-color: blueviolet;
+}
