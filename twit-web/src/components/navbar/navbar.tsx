@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { useState } from 'react'
 import { useRouter, NextRouter } from 'next/router'
 
 import styles from './navbar.module.css'
