@@ -5,8 +5,8 @@ import Navbar from '../navbar/navbar'
 import styles from './layout.module.css'
 
 type LayoutProps = {
+  title: string,
   children: React.ReactNode,
-  title: string
 }
 
 function Layout(props: LayoutProps) {
@@ -18,6 +18,7 @@ function Layout(props: LayoutProps) {
       <div className={styles.outer}>
         <Navbar />
         <div className={styles.container}>
+          <h1 className={styles.title}>{ props.title }</h1>
           { props.children }
         </div>
       </div>
