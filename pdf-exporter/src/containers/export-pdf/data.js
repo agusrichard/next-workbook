@@ -17,5 +17,10 @@ export default {
     companyRepresentativeName: 'Asnawi',
     clientRepsPositionTitle: 'Bp Reps',
     companyRepsPositionTitle: 'Operation Manager'
+  },
+  ccuHandoverReturnData: {
+    date: '1 / January / 2021',
+    topRightDataDate: 'CM 204/ENSCO 106/FEB/2021',
+    topRightDataVessel: 'WM Natuna'
   }
 }

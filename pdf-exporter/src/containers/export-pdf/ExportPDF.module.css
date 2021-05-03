@@ -38,7 +38,6 @@ div.content {
 }
 
 div.pdfContainer {
-  padding: 10px;
   position: relative;
 }
 
@@ -59,7 +58,7 @@ div.rightOrderedList {
 
 div.leftColItem {
   margin: 10px;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 span.leftColNum {
@@ -111,18 +110,49 @@ div.middleComponentColumn {
 }
 
 .terms {
-  padding: 5px 15px;
+  padding: 0 15px;
 }
 
 .terms li {
-  margin: 2px 0;
-  font-size: 10px;
+  margin: 5px 0;
+  font-size: 9px;
   font-style: italic;
 }
 
 /* CCU SIGNING BLOCK STYLES */
+div.columntwo {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 div.ccuSigningGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  column-gap: 20px;
+  grid-template-columns: 2fr 3fr;
+}
+
+div.ccuSigningGrid p {
+  padding: 10px 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+div.ccuSigningBlock {
+  font-size: 9px;
+  padding: 0 10px;
+}
+
+p.underline {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+div.boxedSigningBlock {
+  width: 100%;
+  padding: 10px;
+  font-size: 9px;
+  margin-top: 10px;
+  position: relative;
+  border: 1px solid black;
 }

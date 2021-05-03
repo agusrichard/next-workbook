@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import { PDFExport, savePDF } from '@progress/kendo-react-pdf'
 
 import CONSTANTS from './constants'
-import data from './data'
 import styles from './ExportPDF.module.css'
 import ComponentFactory from './component-factory'
 
@@ -41,6 +40,7 @@ export default function ExportDefault() {
 					<PDFExport
 						margin={CONSTANTS.margin}
 						author={CONSTANTS.author}
+            forcePageBreak='.page-break'
 						fileName={CONSTANTS.fileName}
 						paperSize={CONSTANTS.paperSize}
 						ref={component => refPDFExport.current = component}
@@ -54,6 +54,9 @@ export default function ExportDefault() {
 							<ComponentFactory.TopRightLogo />
 							<ComponentFactory.MiddleComponent />
 							<ComponentFactory.SigningBlock />
+              <ComponentFactory.BoxedSigningBlock />
+              <h3 className="page-break">Page 2</h3>
+              <div>Sekardayu Hana Pradiani</div>
 						</div>
 					</PDFExport>
 				</div>
