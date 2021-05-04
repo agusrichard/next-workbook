@@ -22,5 +22,19 @@ export default {
     date: '1 / January / 2021',
     topRightDataDate: 'CM 204/ENSCO 106/FEB/2021',
     topRightDataVessel: 'WM Natuna'
+  },
+  cargoChecklistData: {
+    header: {
+      idNo: 'AME 4574',
+      typeCCU: 'Mini Container',
+      dateOfInspection: '25-Jan-21',
+      locationOfInspection: 'POSB Sorong',
+      inspectedBy: 'Frets Hendri Matapere',
+      lastOfInspection: '18 Jan 2021 (MPI Inspection) PT. Siaptek',
+      colorCode: 'Green (January-June 2021)',
+      standard: 'DNY-DL-ST-E271 (2017)',
+      dateOfHire: '25-Jan-21',
+      msrNo: '30016987',
+    }
   }
 }

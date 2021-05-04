@@ -203,4 +203,100 @@ function BoxedSigningBlock() {
   )
 }
 
-export default { TopComponent, TopRightLogo, MiddleComponent, SigningBlock, BoxedSigningBlock }
+function InspectionChecklistTop() {
+  return (
+    <div className={styles.inspectionChecklistTop}>
+      <div className={styles.inspectionChecklistTopText}>
+        <p>CARGO CARRYING UNIT (CCU)</p>
+        <p>INSPECTION CHECKLIT</p>
+      </div>
+      <div>
+        <img src='/beyond.png' className={styles.logoImg} />
+      </div>
+    </div>
+  )
+}
+
+function InspectionChecklistHeader() {
+  return (
+    <div className={styles.inspectionListHeaderContainer}>
+      <div>
+        <div className={styles.inspectionListHeaderColumns}>
+          <p>ID No.</p>
+          <p className={styles.inspectionListHeaderTextValue}>{data.cargoChecklistData.header.idNo}</p>
+        </div>
+        <div className={styles.inspectionListHeaderColumns}>
+          <p>Type CCU</p>
+          <p className={styles.inspectionListHeaderTextValue}>{data.cargoChecklistData.header.typeCCU}</p>
+        </div>
+        <div className={styles.inspectionListHeaderColumns}>
+          <p>Date of Inspection</p>
+          <p className={styles.inspectionListHeaderTextValue}>{data.cargoChecklistData.header.dateOfInspection}</p>
+        </div>
+        <div className={styles.inspectionListHeaderColumns}>
+          <p>Location of Inspection</p>
+          <p className={styles.inspectionListHeaderTextValue}>{data.cargoChecklistData.header.locationOfInspection}</p>
+        </div>
+        <div className={styles.inspectionListHeaderColumns}>
+          <p>Inspected by</p>
+          <p className={styles.inspectionListHeaderTextValue}>{data.cargoChecklistData.header.inspectedBy}</p>
+        </div>
+      </div>
+      <div>
+        <div className={styles.inspectionListHeaderColumns}>
+          <p>Last of Inspection (by 3rd party)</p>
+          <p className={styles.inspectionListHeaderTextValue}>{data.cargoChecklistData.header.lastOfInspection}</p>
+        </div>
+        <div className={styles.inspectionListHeaderColumns}>
+          <p>Color Code</p>
+          <p className={styles.inspectionListHeaderTextValue}>{data.cargoChecklistData.header.colorCode}</p>
+        </div>
+        <div className={styles.inspectionListHeaderColumns}>
+          <p>Standard</p>
+          <p className={styles.inspectionListHeaderTextValue}>{data.cargoChecklistData.header.standard}</p>
+        </div>
+        <div className={styles.inspectionListHeaderColumns}>
+          <p>Date of Hire</p>
+          <p className={styles.inspectionListHeaderTextValue}>{data.cargoChecklistData.header.dateOfHire}</p>
+        </div>
+        <div className={styles.inspectionListHeaderColumns}>
+          <p>MSR No.</p>
+          <p className={styles.inspectionListHeaderTextValue}>{data.cargoChecklistData.header.msrNo}</p>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function InspectionChecklistTable() {
+  return (
+    <table className={styles.inspectionChecklistTable}>
+      <tr>
+        <th>No</th>
+        <th>
+          <p>Question</p>
+          <p>(Jika jawabannya YA, beri tanda &#10003;. Jika jawabannya TIDAK, beri tanda X dan NA untuk tidak teraplikasi)</p>
+        </th>
+        <th>Yes/No</th>
+        <th>Remark</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td>INSPECTION ACCESSIBILITY</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  )
+}
+
+export default {
+  TopComponent,
+  TopRightLogo,
+  SigningBlock,
+  MiddleComponent,
+  BoxedSigningBlock,
+  InspectionChecklistTop,
+  InspectionChecklistTable,
+  InspectionChecklistHeader,
+}

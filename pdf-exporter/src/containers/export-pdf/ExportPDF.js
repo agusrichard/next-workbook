@@ -7,8 +7,8 @@ import styles from './ExportPDF.module.css'
 import ComponentFactory from './component-factory'
 
 export default function ExportDefault() {
-	const refPDFExport = useRef(null)
 	const refDiv = useRef(null)
+	const refPDFExport = useRef(null)
 
 	const exportPDFWithMethod = () => {
 		savePDF(ReactDOM.findDOMNode(refDiv.current), {
@@ -46,17 +46,24 @@ export default function ExportDefault() {
 						ref={component => refPDFExport.current = component}
 					>
 						<div
-							className={styles.pdfContainer}
 							ref={container => refDiv.current = container}
 						>
-							<p className={styles.documentTitle}>CCU ON HIRE/OFF HIRE FORM</p>
-							<ComponentFactory.TopComponent />
-							<ComponentFactory.TopRightLogo />
-							<ComponentFactory.MiddleComponent />
-							<ComponentFactory.SigningBlock />
-              <ComponentFactory.BoxedSigningBlock />
-              <h3 className="page-break">Page 2</h3>
-              <div>Sekardayu Hana Pradiani</div>
+              <div className={styles.pdfContainer}>
+                <p className={styles.documentTitle}>CCU ON HIRE/OFF HIRE FORM</p>
+                <ComponentFactory.TopComponent />
+                <ComponentFactory.TopRightLogo />
+                <ComponentFactory.MiddleComponent />
+                <ComponentFactory.SigningBlock />
+                <ComponentFactory.BoxedSigningBlock />
+              </div>
+              <div className="page-break"></div>
+              <div className={styles.pdfContainer}>
+                <ComponentFactory.InspectionChecklistTop />
+                <div className={styles.inspectionChecklistBox}>
+                  <ComponentFactory.InspectionChecklistHeader />
+                  <ComponentFactory.InspectionChecklistTable />
+                </div>
+              </div>
 						</div>
 					</PDFExport>
 				</div>
