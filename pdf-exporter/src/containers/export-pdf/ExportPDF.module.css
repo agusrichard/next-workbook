@@ -200,15 +200,52 @@ div.boxedSigningBlock {
 }
 
 .inspectionChecklistTable {
+  margin: 0;
+  padding: 0;
   width: 100%;
   font-size: 6px;
   border-collapse: collapse;
 }
 
 .inspectionChecklistTable td {
-  border: 1px solid #dddddd;
+  border: 1px solid black;
 }
 
 .inspectionChecklistTable th {
-  border: 1px solid #dddddd;
+  border: 1px solid black;
+}
+
+.inspectionChecklistTable th:nth-child(1) {
+  width: 25px;
+  text-align: center;
+}
+
+.inspectionChecklistTable td:nth-child(1) {
+  width: 25px;
+  text-align: center;
+}
+
+.inspectionChecklistTable th:nth-child(2) {
+  width: 250px;
+}
+
+.inspectionChecklistTable td:nth-child(2) {
+  width: 250px;
+}
+
+.inspectionChecklistTable th:nth-child(3) {
+  width: 50px;
+}
+
+.inspectionChecklistTable td:nth-child(3) {
+  width: 50px;
+  text-align: center;
+}
+
+.inspectionChecklistTable th:nth-child(4) {
+  width: 100%;
+}
+
+.inspectionChecklistTable td:nth-child(4) {
+  width: 100%;
 }

@@ -1,4 +1,5 @@
 import data from './data'
+import table from './table'
 import styles from './ExportPDF.module.css'
 
 function TopComponent() {
@@ -282,10 +283,114 @@ function InspectionChecklistTable() {
       </tr>
       <tr>
         <td></td>
-        <td>INSPECTION ACCESSIBILITY</td>
+        <td style={{ fontWeight: 'bold' }}>INSPECTION ACCESSIBILITY</td>
+        <td></td>
+        <td rowSpan="37"></td>
+      </tr>
+      {table.inspectionAccessibility.map((item, index) => (
+        <tr key={`inspectionAccessibility-${index}`}>
+          <td>{index+1}</td>
+          <td>{item.question}</td>
+          <td>{item.answer}</td>
+          <td></td>
+        </tr>
+      ))}
+      <tr>
+        <td></td>
+        <td style={{ fontWeight: 'bold' }}>IDENTITY VERIFICATION</td>
         <td></td>
         <td></td>
       </tr>
+      {table.indentityVerification.map((item, index) => (
+        <tr key={`indentityVerification-${index+2}`}>
+          <td>{index+2}</td>
+          <td>{item.question}</td>
+          <td>{item.answer}</td>
+          <td></td>
+        </tr>
+      ))}
+      <tr>
+        <td></td>
+        <td style={{ fontWeight: 'bold' }}>PAD EYES</td>
+        <td></td>
+        <td></td>
+      </tr>
+      {table.padEyes.map((item, index) => (
+        <tr key={`padEyes-${index+4}`}>
+          <td>{index+4}</td>
+          <td>{item.question}</td>
+          <td>{item.answer}</td>
+          <td></td>
+        </tr>
+      ))}
+      <tr>
+        <td></td>
+        <td style={{ fontWeight: 'bold' }}>RANGKA CCU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      {table.rangkaCCU.map((item, index) => (
+        <tr key={`rangkaCCU-${index+7}`}>
+          <td>{index+7}</td>
+          <td>{item.question}</td>
+          <td>{item.answer}</td>
+          <td></td>
+        </tr>
+      ))}
+      <tr>
+        <td></td>
+        <td style={{ fontWeight: 'bold' }}>PINTU</td>
+        <td></td>
+        <td></td>
+      </tr>
+      {table.pintu.map((item, index) => (
+        <tr key={`pintu-${index+11}`}>
+          <td>{index+11}</td>
+          <td>{item.question}</td>
+          <td>{item.answer}</td>
+          <td></td>
+        </tr>
+      ))}
+      <tr>
+        <td></td>
+        <td style={{ fontWeight: 'bold' }}>MARKING</td>
+        <td></td>
+        <td></td>
+      </tr>
+      {table.marking.map((item, index) => (
+        <tr key={`marking-${index+16}`}>
+          <td>{index+16}</td>
+          <td>{item.question}</td>
+          <td>{item.answer}</td>
+          <td></td>
+        </tr>
+      ))}
+      <tr>
+        <td></td>
+        <td style={{ fontWeight: 'bold' }}>PAD EYES</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style={{ fontWeight: 'bold' }}>ID No. Of Wire Rope Sling: UK06A/92298</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style={{ fontWeight: 'bold' }}>ID No. Of Shacker: C03433.C03436</td>
+        <td></td>
+        <td></td>
+      </tr>
+      {table.liftingSet.map((item, index) => (
+        <tr key={`liftingSet-${index+15}`}>
+          <td>{index+15}</td>
+          <td>{item.question}</td>
+          <td>{item.answer}</td>
+          <td></td>
+        </tr>
+      ))}
     </table>
   )
 }
