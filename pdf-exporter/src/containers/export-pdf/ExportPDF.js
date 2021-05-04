@@ -56,8 +56,8 @@ export default function ExportDefault() {
                 <ComponentFactory.SigningBlock />
                 <ComponentFactory.BoxedSigningBlock />
               </div>
-              <div className="page-break"></div>
-              <div className={styles.pdfContainer}>
+              {/* <div className="page-break"></div> */}
+              <div className={`page-break ${styles.pdfContainer}`}>
                 <ComponentFactory.InspectionChecklistTop />
                 <div className={styles.inspectionChecklistBox}>
                   <ComponentFactory.InspectionChecklistHeader />

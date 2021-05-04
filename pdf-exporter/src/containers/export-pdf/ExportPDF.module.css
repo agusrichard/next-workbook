@@ -243,9 +243,9 @@ div.boxedSigningBlock {
 }
 
 .inspectionChecklistTable th:nth-child(4) {
-  width: 100%;
+  width: calc(100% - 25px - 250px - 50px);
 }
 
 .inspectionChecklistTable td:nth-child(4) {
-  width: 100%;
+  width: calc(100% - 25px - 250px - 50px);
 }
