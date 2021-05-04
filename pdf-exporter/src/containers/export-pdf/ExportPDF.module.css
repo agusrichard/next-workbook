@@ -249,3 +249,59 @@ div.boxedSigningBlock {
 .inspectionChecklistTable td:nth-child(4) {
   width: calc(100% - 25px - 250px - 50px);
 }
+
+.inspectionChecklistTable .remarkImg {
+  width: 100%;
+  height: 75px;
+  margin: 20px 0;
+}
+
+/* findingBlock STYLES */
+.findingBlock {
+  height: 60px;
+  font-size: 6px;
+  padding: 10px;
+}
+
+/* commentBlock STYLES */
+.commentBlock {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 6px;
+  border-collapse: collapse;
+}
+
+.commentBlock td {
+  height: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.commentBlockCol1 {
+  width: 100px;
+}
+
+.commentBlockCol2 {
+  width: calc(100% - 100px);
+}
+
+/* signatureBlock STYLES */
+.signatureBlock {
+  display: flex;
+  font-size: 8px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.signatureBlock p {
+  text-align: center;
+}
+
+.borderBottom {
+  border-bottom: 1px solid black;
+}
+
+.marginForSigning {
+  margin-bottom: 35px;
+}

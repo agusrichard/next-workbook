@@ -288,7 +288,11 @@ function InspectionChecklistTable() {
           <td></td>
           <td style={{ fontWeight: 'bold' }}>INSPECTION ACCESSIBILITY</td>
           <td></td>
-          <td rowSpan="37"></td>
+          <td rowSpan="37">
+            <img src='/cat1.jpg' className={styles.remarkImg} />
+            <img src='/cat2.jpg' className={styles.remarkImg} />
+            <img src='/cat3.jpg' className={styles.remarkImg} />
+          </td>
         </tr>
         {table.inspectionAccessibility.map((item, index) => (
           <tr key={`inspectionAccessibility-${index}`}>
@@ -384,10 +388,61 @@ function InspectionChecklistTable() {
   )
 }
 
+function FindingBlock() {
+  return (
+    <div className={styles.findingBlock}>
+      <p>Finding:</p>
+      <p>N/a</p>
+    </div>
+  )
+}
+
+function CommentBlock() {
+  return (
+    <table className={styles.commentBlock}>
+      <tbody>
+        <tr>
+          <td className={styles.commentBlockCol1}>Date of Close</td>
+          <td className={styles.commentBlockCol2}>Comment</td>
+        </tr>
+        <tr>
+          <td className={styles.commentBlockCol1}></td>
+          <td className={styles.commentBlockCol2}></td>
+        </tr>
+        <tr>
+          <td style={{ textAlign: 'center' }} colSpan="2">Ready to Use</td>
+        </tr>
+        <tr>
+          <td style={{ textAlign: 'center' }} colSpan="2"></td>
+        </tr>
+      </tbody>
+    </table>
+  )
+}
+
+function SignatureBlock() {
+  return (
+    <div className={styles.signatureBlock}>
+      <div>
+        <p className={styles.marginForSigning}>Inspect By</p>
+        <p className={styles.borderBottom}>Frets Hendri Matapere</p>
+        <p>QC Engineer</p>
+      </div>
+      <div>
+        <p className={styles.marginForSigning}>Checked By</p>
+        <p>Suhendrik / Denny A</p>
+      </div>
+    </div>
+  )
+}
+
 export default {
   TopComponent,
   TopRightLogo,
   SigningBlock,
+  FindingBlock,
+  CommentBlock,
+  SignatureBlock,
   MiddleComponent,
   BoxedSigningBlock,
   InspectionChecklistTop,

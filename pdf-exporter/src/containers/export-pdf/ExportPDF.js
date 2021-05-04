@@ -62,6 +62,9 @@ export default function ExportDefault() {
                 <div className={styles.inspectionChecklistBox}>
                   <ComponentFactory.InspectionChecklistHeader />
                   <ComponentFactory.InspectionChecklistTable />
+                  <ComponentFactory.FindingBlock />
+                  <ComponentFactory.CommentBlock />
+                  <ComponentFactory.SignatureBlock />
                 </div>
               </div>
 						</div>
